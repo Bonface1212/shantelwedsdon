@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2d3a2d;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('images/wedding-bg.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+
+.hero-content {
+  position: relative;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+}
+
+.bride { color: #ff6a00; }
+.groom { color: #0033cc; }
+.and { color: #3b5d3b; }
+
+.invite {
+  color: #ff6a00;
+}
+
+.btn {
+  background: #3b5d3b;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* COUNTDOWN */
+#countdown {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* LIGHTBOX */
+#lightbox {
+  position: fixed;
+  display: none;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 80%;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+  background: green;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* MUSIC BUTTON */
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6a00;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
